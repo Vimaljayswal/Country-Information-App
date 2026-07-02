@@ -16,6 +16,7 @@ function Home() {
     try {
       let response = await Axios.get(
         `https://restcountries.com/v3.1/name/${country}?fullText=true`,
+        // `https://restcountries.com/v3.1/name/${country}`,
       );
       // console.log(response)
       console.log(response.data[0]);
